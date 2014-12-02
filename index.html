@@ -1,0 +1,84 @@
+<!doctype html>
+<html ng-app="VolunteerApp" lang="en-US"> 
+<head>
+
+
+<!-- foundation CSS -->
+<img src="app/images/Slice-1.jpg" id="bg" alt="">
+<link rel="stylesheet" href="/app/css/normalize.css" />
+<link rel="stylesheet" href="/app/css/foundation.css" />
+<script src="app/js/vendor/modernizr.js"></script>
+
+<!--App CSS -->
+<link rel="stylesheet" href="/app/css/index.css" />
+
+
+<title>Volunteer Connection</title>
+</head>
+
+<body ng-controller="mainCtrl">
+    <div class="off-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="tab-bar">
+                <section class="left-small">
+                    <a class="left-off-canvas-toggle menu-icon" href=""><span></span></a>
+                </section>
+                
+            </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a><span>Search</span></a></li>
+                <li><a>Need Volunteers?</a></li>
+                <li><a> Want to volunteer?</a></li>
+                <li><a>About US</a></li>                        
+                <li><a>Settings</a></li>
+                <li><a>Help</a></li>
+                <li><a>Images</a></li>
+                 <li><a>Log Out</a></li>    
+              </ul>
+            </aside>
+            
+
+<div ng-view></div>
+
+
+
+<!--AngularJS-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.js"></script>
+
+<!--Module-->
+<script src="app/js/app.js"></script>
+
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+
+<!--Controllers-->
+<script src="app/auth/login/loginCtrl.js"></script>
+<script src="app/auth/register/registerCtrl.js"></script>
+<script src="app/js/controllers/mainCtrl.js"></script>
+<script src="app/js/controllers/notificationsCtrl.js"></script>
+<script src="app/js/controllers/opportunitiesCtrl.js"></script>
+<script src="app/js/controllers/profileCtrl.js"></script>
+<script src="app/js/controllers/homeCtrl.js"></script>
+<script src="app/js/controllers/usersCtrl.js"></script>
+
+<!--Services-->
+<script src="app/auth/authService.js"></script>
+<script src="app/firebase/firebaseService.js"></script>
+
+<!--Foundation -->
+<script src="app/js/foundation.min.js"></script>
+<script src="app/js/offcanvas.js"></script>
+<script src="app/js/vendor/jquery.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+
+
+<script>
+  $(document).foundation();
+</script>
+
+
+</body>
+</html>
