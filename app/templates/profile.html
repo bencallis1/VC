@@ -1,24 +1,38 @@
+<section class="profile">
 <div class="row">
-	<div class="large-2 columns">
-		<div class="profile-sidebar">
-
-	
+	<div class="row-2">
+		<div class=" small-2 columns medium-3 columns  large-3 columns">
+			<div class="profile-sidebar">
+			</div>
 		</div>
-
-	</div>
-	<div class="large-10 columns">
-		<div class="profile-header">
-		<ul class="button-group right">
-                <li><a href="#/login" id="home-login"></a></li>
-                <li><a href="#/register" id="home-signUp"></a></li>
-            </ul>
-
-		</div>
+			<div class="small-6 columns  large-9 columns">
+				<div class="profile-header">
+					<div class="header-input">
+						<input id="profile-search"  type="text" placeholder="Search" ng-model="post.type"/>
+         				<input  id="profile-date" type="text" placeholder="Date" ng-model="post.date"/>
+      				</div>
+      			</div>
+      		<div class="posts" style="overflow:scroll">
+      		<div class="small-4 columns text-center"  ng-repeat="friend in friends | filter:friend" >
+				<div class="post-type">
+					<ul>
+	   				 	<li>
+					 	<h3>{{friend.name}}</h3>
+					 	</li>
+  					</ul>
+				</div>
+      					
+      
+     
+    
 	</div>
 
 </div>
+</div>
+</div>
+</div>
 
-
+</section>
 
 
 
