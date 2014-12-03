@@ -1,4 +1,4 @@
-var app = angular.module('VolunteerApp', ['ngRoute', 'firebase', 'mm.foundation.offcanvas']);
+var app = angular.module('VolunteerApp', ['ngRoute', 'firebase', 'mm.foundation.offcanvas' ]);
 
 app.config(function($routeProvider){
     $routeProvider
@@ -32,6 +32,10 @@ app.config(function($routeProvider){
       }) .when('/profile', {
             templateUrl: 'app/templates/profile.html',
             controller:  'profileCtrl'
+      })
+      .when('/post', {
+            templateUrl: 'app/templates/post.html',
+            controller:  'postCtrl'
       })
       .otherwise ({
             redirectTo: '/home'
