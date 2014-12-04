@@ -1,0 +1,62 @@
+<div class="row">
+        <div class="large-6 columns">
+         <form class="profile-form">
+            <div class="upload-box">
+                <h1 id="upload-box"> Basic Info  </h1> 
+            </div>
+           <div class="login-name">
+            <form name="profile-form">
+            <div class="form-group">
+            
+            <input type='text' id="user_name"  placeholder="User Name" ng-model="user.name">
+            <input type='text' id="user_name"  placeholder="Phone Number" ng-model="user.phone">
+            <input type='text' class="form-control" placeholder="city" ng-model="user.city">
+            <input type='text' class="form-control" placeholder="state" ng-model="user.state">
+            <input type='text' class="form-control" placeholder="Country" ng-model="user.country">
+            <input type='text' class="form-control" placeholder="Upload Photo" ng-model="user.image">
+            </div> 
+        </form>
+       </div>
+       
+        </div>
+        <div class="large-6 columns">
+         <form class="profile-form2">
+            <div class="upload-box2">
+                <h1 id="upload-box2"> select volunteer opportunities that interest you   </h1> 
+            </div>
+           <div class="login-name">
+            <form name="loginForm">
+                <div class="form-group">
+helping the Elderly: <input type='checkbox' ng-model="type.elderly"> 
+<br>
+Working with youth: <input type='checkbox' ng-model="type.youth">
+<br>                
+Community Outreach : <input type='checkbox'  ng-model="type.outreach">
+<br>
+Teaching:<input type='checkbox'  ng-model="type.teaching">
+<br>
+counseling:<input type='checkbox'  ng-model="type.counseling">
+<br>
+Addiction Recovery:<input type='checkbox'  ng-model="type.addiction">
+<br>
+Events: <input type='checkbox'  ng-model="type.events">
+<br>
+Disaster Relief: <input type='checkbox'  ng-model="type.disaster">
+<br>
+indoor:<input type='checkbox'  ng-model="type.events"> outdoor: <input type='checkbox'  ng-model="type.events">  Both: <input type='checkbox'  ng-model="type.events"> 
+
+          
+          <div id="menu2"> 
+                    <ul class="button-group ">
+                        <li>
+                        <a  class="signup" ng-click="updateProfile()">update profile</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+        </form>
+         </form>
+        </div>
+       </div>
+    
+
